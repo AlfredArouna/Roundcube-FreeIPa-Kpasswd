@@ -11,8 +11,10 @@ With this plugin, one request is send: from roundcube server to FreeIPA one, whi
 
  1. Get CA certificate from FreeIPA server:
 
+	```bash
  	# The certificate can be obtained in https://$host/ipa/config/ca.crt
  	wget --no-check-certificate https://ipa.demo1.freeipa.org/ipa/config/ca.crt -O certs/ipa.demo1.freeipa.org_ca.crt
+	```
 
  2. Copy `freeipa` folder in `$ROUNDCUBE_ROOT/plugins/password/drivers/`
  3. Backup `kpasswd.php` and copy `kpasswd.php` in `$ROUNDCUBE_ROOT/plugins/password/drivers/`
