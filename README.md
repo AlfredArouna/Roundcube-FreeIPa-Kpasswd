@@ -1,4 +1,4 @@
-# Roundcube-FreeIPa-Kpasswd
+# Roundcube-FreeIPA-Kpasswd
 Custom Password update driver for FreeIPa based on kpasswd
 
 This driver for Roundcube password plugin allow to reset user password against FreeIPA. The old kpasswd plugin required interactive script which need to back and forth request from mail server to FreeIPA server.
@@ -9,7 +9,7 @@ With this plugin, one request is send: from roundcube server to FreeIPA one, whi
 
 ## Setup
 
- 1. Get CA certificate from FreeIPA server:
+ 1. Get CA certificate from FreeIPA server :
 
 	# The certificate can be obtained in https://$host/ipa/config/ca.crt
 	wget --no-check-certificate https://ipa.demo1.freeipa.org/ipa/config/ca.crt -O certs/ipa.demo1.freeipa.org_ca.crt
@@ -18,7 +18,7 @@ With this plugin, one request is send: from roundcube server to FreeIPA one, whi
  3. Backup `kpasswd.php` and copy `kpasswd.php` in `$ROUNDCUBE_ROOT/plugins/password/drivers/`
  4. Update Roundcube configuration in `$ROUNDCUBE_ROOT/config/config.inc.php` :
 
-	$config['password_freeipa_host'] = 'ipa.demo1.freeipa.org'; 
+	$config['password_freeipa_host'] = 'ipa.demo1.freeipa.org' : 
 	$config['password_freeipa_cert'] = '$ROUNDCUBE/plugins/password/drivers/freeipa/certs/ipa.demo1.freeipa.org_ca.crt'; 
 	$config['password_freeipa_admin'] = 'admin';
 	$config['password_freeipa_admin_passwd'] = 'password';
