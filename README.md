@@ -32,7 +32,7 @@ With this plugin, one request is send: from roundcube server to FreeIPA one, whi
 At the end, you will have structure like:
 
 	tree $ROUNDCUBE_ROOT/plugins/password/drivers/freeipa/
-	/var/www/html/roundcubemail/plugins/password/drivers/freeipa/
+	$ROUNDCUBE_ROOT/plugins/password/drivers/freeipa/
 	├── bootstrap.php
 	├── certs
 	│   └── ipa0.demo1.freeipa.org_ca.crt
