@@ -3,14 +3,15 @@
 /**
  * kpasswd Driver
  *
- * Driver that adds functionality to change the systems user password via
- * the 'kpasswd' command.
+ * Driver that adds functionality to change the user password from FreeIPA
  *
  * For installation instructions please read the README file.
  *
  * @version 1.0
  * @author Alfred Arouna <alfred.arouna@gmail.com>
  *
+ * Based on php-freeipa "PHP library for connect and use some features of the freeIPA / Red Hat Identity Management" by
+ * @author Tobias Sette <contato@tobias.ws>
  * Based on chpasswd roundcubemail password driver by
  * @author Alex Cartwright <acartwright@mutinydesign.co.uk>
  */
